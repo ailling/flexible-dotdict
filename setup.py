@@ -31,7 +31,7 @@ setup(
     author_email='alanilling@gmail.com',
     url='',
     packages=[],
-    package_data=['VERSION', 'description.txt'],
+    package_data={'flexible-dotdict': ['VERSION', 'description.txt']},
     install_requires=install_requires,
     scripts=[],
     classifiers=[
