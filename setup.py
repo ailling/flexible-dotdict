@@ -12,17 +12,19 @@ install_requires = []
 long_description="""Flexible dotted dictionary
 
 A dictionary that allows access to keys via the dot operator, so that instance.value is equivalent to instance['value'].
+
+Github repository: https://github.com/ailling/flexible-dotdict
 """
 
 
 setup(
     name='flexible-dotdict',
-    version='0.2.0',
+    version='0.2.1',
     description='A dictionary that allows access to keys via the dot operator',
     long_description=long_description,
     author='Alan Illing',
     author_email='alanilling@gmail.com',
-    url='',
+    url='https://github.com/ailling/flexible-dotdict',
     packages=['dotdict'],
     package_data={'dotdict': ['VERSION']},
     install_requires=install_requires,
