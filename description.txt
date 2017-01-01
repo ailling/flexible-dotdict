@@ -1,0 +1,3 @@
+Flexible dotted dictionary
+
+A dictionary that allows access to keys via the dot operator, so that `instance.value` is equivalent to `instance['value']`.
