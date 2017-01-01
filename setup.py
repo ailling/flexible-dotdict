@@ -15,7 +15,7 @@ A dictionary that allows access to keys via the dot operator, so that instance.v
 """
 
 def get_version():
-    from dotdict import VERSION
+    from .dotdict import VERSION
     return VERSION
 
 
