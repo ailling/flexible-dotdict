@@ -8,16 +8,13 @@ except ImportError:
 
 install_requires = []
 
-# long_description = ''
-with open('description.txt', 'r') as f:
-    long_description = f.read()
+
+long_description="""Flexible dotted dictionary
+
+A dictionary that allows access to keys via the dot operator, so that instance.value is equivalent to instance['value'].
+"""
 
 def get_version():
-    # sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'flexible-dotdict'))
-    # from version import VERSION
-    # v = VERSION
-    # sys.path.pop(0)
-    # return v
     from dotdict import VERSION
     return VERSION
 
@@ -31,7 +28,7 @@ setup(
     author_email='alanilling@gmail.com',
     url='',
     packages=[],
-    package_data={'flexible-dotdict': ['VERSION', 'description.txt']},
+    package_data={'flexible-dotdict': ['VERSION']},
     install_requires=install_requires,
     scripts=[],
     classifiers=[
