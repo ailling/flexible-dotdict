@@ -17,14 +17,14 @@ A dictionary that allows access to keys via the dot operator, so that instance.v
 
 setup(
     name='flexible-dotdict',
-    version='0.1.3',
+    version='0.2.0',
     description='A dictionary that allows access to keys via the dot operator',
     long_description=long_description,
     author='Alan Illing',
     author_email='alanilling@gmail.com',
     url='',
-    packages=[],
-    package_data={'flexible-dotdict': ['VERSION']},
+    packages=['dotdict'],
+    package_data={'dotdict': ['VERSION']},
     install_requires=install_requires,
     scripts=[],
     classifiers=[

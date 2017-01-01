@@ -1,6 +1,3 @@
-import version
-VERSION = version.VERSION
-
 class DotDict(dict):
     """
     Simple dictionary wrapper that overrides the dot operator with dictionary getter and setter
