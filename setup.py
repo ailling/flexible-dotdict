@@ -14,17 +14,10 @@ long_description="""Flexible dotted dictionary
 A dictionary that allows access to keys via the dot operator, so that instance.value is equivalent to instance['value'].
 """
 
-def get_version():
-    sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'flexible-dotdict'))
-    from version import VERSION
-    v = VERSION
-    sys.path.pop(0)
-    return v
-
 
 setup(
     name='flexible-dotdict',
-    version=get_version(),
+    version='0.1.3',
     description='A dictionary that allows access to keys via the dot operator',
     long_description=long_description,
     author='Alan Illing',
