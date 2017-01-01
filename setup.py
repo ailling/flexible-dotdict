@@ -15,8 +15,11 @@ A dictionary that allows access to keys via the dot operator, so that instance.v
 """
 
 def get_version():
-    from .dotdict import VERSION
-    return VERSION
+    sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'flexible-dotdict'))
+    from version import VERSION
+    v = VERSION
+    sys.path.pop(0)
+    return v
 
 
 setup(
